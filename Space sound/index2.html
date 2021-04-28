@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--File Creator: Erick Ruscitti
+email: erirusci@uat.edu
+for CSC102 class spring 2021-->
+<html>
+
+<head>
+    <!--this links my CSS page that sets the page background and color of the buttons-->
+    <link href="space.css" rel="stylesheet" type="text/css" />
+    <!--This is what gets displayed on the tab,
+    it is not shown on the actual page-->
+    <script src="code.js"></script>
+    <title>
+        UAT Space Page
+    </title>
+</head>
+
+<body>
+    <!--this is a table to have the logo and the h1 on the same line on the page-->
+    <table>
+        <td>
+            <!--this inserts the picture at the top of the page-->
+            <img src="UATspaceLogo-1.jpg">
+        </td>
+        <td>
+            <!--this is for the header UAT Space program and sets the font color-->
+            <h1 style=color:rebeccapurple>
+                UAT Space Program
+        </td>
+    </table>
+<table border="2" id="data" width="70%" class="mainTable">
+    <col style="width: 35%;">
+    <col style="width: 35%;">
+    <thead>
+        <tr style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+            <th align="left">Data Type</th>
+            <th align="left">Readings</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr id="seconds"><td>Time Elapsed</td><td>15 seconds</td></tr>
+        <tr id="latitude"><td>latitude</td><td>0</td></tr>
+        <tr id="longitude"><td>longitude</td><td>0</td></tr>
+        <tr id="GPS Altitude"><td>GPS Altitude</td><td>0</td></tr>
+        <tr id="BMP Sensor Altitude"><td>BMP Sensor Altitude</td><td>30383.04</td></tr>
+        <tr id="BMP Sensor Pressure"><td>BMP Sensor Pressure</td><td>2.34</td></tr>
+        <tr id="BMP Sensor Temperature"><td>BMP Sensor Temperature</td><td>0</td></tr>
+        <tr id="Digital Sensor Temperature"><td>Digital Sensor Temperature</td><td>24.12</td></tr>
+        <tr id="CSS Sensor Temperature"><td>CSS Sensor Temperature</td><td>25</td></tr>
+        <tr id="CSS Sensor eC02"><td>CSS Sensor eC02</td><td>400</td></tr>
+        <tr id="CSS Sensor TVOC"><td>CSS Sensor TVOC</td><td>0</td></tr>
+        <tr id="UV"><td>UV</td><td>0</td></tr>
+        <tr id="Accel X"><td>Accel X</td><td>-0.87</td></tr>
+        <tr id="Accel Y"><td>Accel Y</td><td>-0.02</td></tr>
+        <tr id="Accel Z"><td>Accel Z</td><td>9.61</td></tr>
+        <tr id="Magnetic X"><td>Magnetic X</td><td>0.13</td></tr>
+        <tr id="Magnetic Y"><td>Magnetic Y</td><td>0.57</td></tr>
+        <tr id="Magnetic Z"><td>Magnetic Z</td><td>-0.24</td></tr>
+        <tr id="Gyro X"><td>Gyro X</td><td>4.66</td></tr>
+        <tr id="Gyro Y"><td>Gyro Y</td><td>0.01</td></tr>
+        <tr id="Gyro Z"><td>Gyro Z</td><td>-0.4</td></tr>
+    </tbody>
+</table>
+
+    <br>
+    <br>
+    <br>
+    <button class="Buttons" id="start" onclick="start();">Start</button><button class="Buttons" id="stop"
+        onclick="stop();">Stop</button>
+    <button class="Buttons" id="playSound" onclick="playSound();">Play Sound</button>
+    <br>
+    <br>
+</body>
+
+</html>
